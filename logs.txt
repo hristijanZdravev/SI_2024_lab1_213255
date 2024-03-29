@@ -1,0 +1,40 @@
+master branch:
+----
+
+
+commit 684cae8e3bbded574a641d1375ae0eedf5d2b19b (HEAD -> master, origin/master, origin/bug2, bug2)
+Author: hristijanZdravev <zdrhristijan@gmail.com>
+Date:   Fri Mar 29 20:15:25 2024 +0100
+
+    Fix wrong condition in makeBigStringFrom
+
+commit dea7ff57b325e8493d5f947a3433192f23dcb6b1 (origin/bug1, bug1)
+Author: hristijanZdravev <zdrhristijan@gmail.com>
+Date:   Fri Mar 29 20:20:54 2024 +0100
+
+    Call method filterOddLengthStrings in main class
+
+commit bfe13ec9b5f90b49f237e1ee21c4fd838cb14dd7
+Author: hristijanZdravev <zdrhristijan@gmail.com>
+Date:   Fri Mar 29 20:05:22 2024 +0100
+
+    Fix wrong condition in filterOddLengthStrings
+
+commit f925dacfc15d22acdad170db524b0c3fd8159dc1
+Author: hristijanZdravev <zdrhristijan@gmail.com>
+Date:   Fri Mar 29 18:19:39 2024 +0100
+
+    Add starter code
+
+commit e2011354b2d97a29b6118dc5fd926ef1014da0d4
+Author: hristijanZdravev <zdrhristijan@gmail.com>
+Date:   Fri Mar 29 18:16:42 2024 +0100
+
+    Initial commit
+
+
+
+
+
+ВАЖНО: Во logs.txt ке го нема commit "Call method makeBigStringFrom in main class" обаа е порадите причината дека во 23 точка не е нагласено што да се направи со конфликтот па избрав rebase --skip ова го 
+брише тој commit каде се случува конфликтот. :) 

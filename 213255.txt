@@ -1,0 +1,33 @@
+1. инсталирано и креирано 
+2. промена на име на гл. гранка во master
+3. Креирав мој оддалечен репозиториум именуван SI_2024_lab1_213255
+4. Направив локален репозиториум и го иницијализирав со командата $ git init
+5. Ги поврзав локалниот со оддалечениот репозиториум со git remote add origin git@github.com:hristijanZdravev/SI_2024_lab1_213255.git 
+6. Додадов датотека README.md со $ echo. > README.md , а направив комит со $ git commit -m "Initial commit"
+7. Додадов датотеките SILab1Main.java SILab1_1.java SILab1_2.java , а направив комит со $ git commit -m "Add starter code"
+8. Ги синхронизирав гранките со $ git push (користејки ssh)
+9. Отворив 2 гранки со $ git branch bug1 bug2 
+10. Со $ git checkout bug1 одам на гранката bug1
+11. Го променив if (el.length() % 2 == 0) во if (el.length() % 2 != 0) сега проверува то стринговите со должина најмалку minLength , ја додадов SILab1_2 и му направив комит со $ git commit -m "Fix wrong condition in filterOddLengthStrings"
+12. Со $ git checkout bug2 одам на гранката bug2
+13. Го променив if (el.length() < minLength) во if  (el.length() >= minLength) сега проверува стрингови со непарна должина, ја додадов SILab1_1 и му направив комит со $ git commit -m "Fix wrong condition in filterOddLengthStrings"
+14. Со $ git checkout bug1 одам на гранката bug1
+15. Додадов повик до метод filterOddLengthStrings на 16 линија, System.out.println(SILab1_2.makeBigStringFrom(list)); ја додадов SILab1Main и му направив комит со $ git commit -m "Call method filterOddLengthStrings in main class"
+16. Со $ git checkout bug2 одам на гранката bug2
+17. Додадов повик до метод makeBigStringFrom на 16 линија, System.out.println(SILab1_2.makeBigStringFrom(list)); ја додадов SILab1Main и му направив комит со $ git commit -m "Call method makeBigStringFrom in main class"
+18. Ги синхронизирав со $ git push --all origin
+19. Со $ git checkout master одам на гранката master
+20. Се спојува со $ git merge bug1
+21. Ги синхронизирав со $ git push --all origin
+22. Со $ git checkout bug2 одам на гранката bug2
+23. Направив $ git rebase master (направив rebase --skip поради тоа што не беше нагласено)
+24. Со $ git checkout master одам на гранката master
+25. Се спојува со $ git merge bug2 (поради тоа што направив rebase --skip немаше никакви конфликти)
+26. Ги синхронизирав со $ git push --all origin но не ми даде
+27. Ги синхронизирав со git push --all origin --force ова ми успеа
+28. Ги додавам log.txt и 213255, му направив комит со $ git commit -m "Final commit"  
+
+
+ВАЖНО: Во logs.txt ке го нема commit "Call method makeBigStringFrom in main class" обаа е порадите причината дека во 23 точка не е нагласено што да се направи со конфликтот па избрав rebase --skip ова го 
+брише тој commit каде се случува конфликтот. :) 
+
